@@ -18,7 +18,7 @@ class CreateKecelakaansTable extends Migration
             $table->integer('no_lapangan');
             $table->string('keterangan_lokasi');
             $table->integer('total_kerugian');
-            $table->geometry('lokasi');
+        
             $table->timestamps();
         });
     }

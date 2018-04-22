@@ -18,3 +18,23 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+
+
+Route::resource('pasals', 'pasalController');
+
+Route::resource('kecelakaans', 'kecelakaanController');
+
+
+
+Route::resource('kendaraans', 'kendaraanController');
+
+Route::resource('korbanKendaraans', 'korban_kendaraanController');
+
+Route::resource('korbanKecelakaans', 'korban_kecelakaanController');
+
