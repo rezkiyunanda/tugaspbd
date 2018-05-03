@@ -24,12 +24,6 @@
             <div class="card-body">
                 <form action="" method="post">
                     <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Nama</label>
-                        <div class="col-md-9">
-                            <p class="col-form-label">{{ $user->name }}</p>
-                        </div>
-                    </div>
-                    <div class="form-group row">
                         <label class="col-md-3 col-form-label">Username</label>
                         <div class="col-md-9">
                             <p class="col-form-label">{{ $user->username }}</p>

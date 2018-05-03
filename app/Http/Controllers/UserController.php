@@ -35,7 +35,6 @@ class UserController extends Controller
 
         $user = new User();
         $user->username = $request->input('username');
-        $user->name = $request->input('name');
         $user->type = 3;
         $user->password = bcrypt($request->input('password'));
         $user->email = $request->input('email');
@@ -100,7 +99,6 @@ class UserController extends Controller
 
         $user = User::find($id);
         $user->username = $request->input('username');
-        $user->name = $request->input('name');
         $user->type = 3;
         $user->password = bcrypt($request->input('password'));
         $user->email = $request->input('email');
