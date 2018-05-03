@@ -30,7 +30,7 @@ class CreatePeminjamanRuangansTable extends Migration
 
             $table->foreign('ruangan_id')->references('id')->on('ruangan');
             $table->foreign('peminjam_id')->references('id')->on('users');
-            $table->foreign('peminjaman_status_id')->references('id')->on('peminajaman_status');
+            $table->foreign('peminjaman_status_id')->references('id')->on('peminjaman_status');
         });
     }
 

@@ -19,15 +19,14 @@ class CreatePerbaikanRuangansTable extends Migration
             $table->date('tanggal_pengajuan');
             $table->integer('pengaju_id')->unsigned();
             $table->text('alasan');
-            $table->integer('perbaikan_status')->default(0);
+            $table->integer('perbaikan_status_id')->unsigned();
             $table->date('tanggal_perbaikan')->nullable();
             $table->date('tanggal_selesai_perbaikan')->nullable();
             $table->timestamps();
 
-            $table->foreign('ruangan_id')->references('id')->on('ruangan');
             $table->foreign('pengaju_id')->references('id')->on('users');
             $table->foreign('ruangan_id')->references('id')->on('ruangan');
-            $table->foreing('peminjaman_status_id')->references('id')->on('peminjaman_status');
+            $table->foreign('perbaikan_status_id')->references('id')->on('perbaikan_status');
         });
     }
 

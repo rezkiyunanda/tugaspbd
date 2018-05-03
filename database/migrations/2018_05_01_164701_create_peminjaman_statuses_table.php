@@ -15,7 +15,7 @@ class CreatePeminjamanStatusesTable extends Migration
     {
         Schema::create('peminjaman_status', function (Blueprint $table) {
             $table->increments('id');
-            $tabel->string('nama');
+            $table->string('nama');
             $table->timestamps();
         });
     }
