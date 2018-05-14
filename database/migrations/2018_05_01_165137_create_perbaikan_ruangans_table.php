@@ -20,6 +20,7 @@ class CreatePerbaikanRuangansTable extends Migration
             $table->integer('pengaju_id')->unsigned();
             $table->text('alasan');
             $table->integer('perbaikan_status_id')->unsigned();
+            $table->integer('status_pengajuan');
             $table->date('tanggal_perbaikan')->nullable();
             $table->date('tanggal_selesai_perbaikan')->nullable();
             $table->timestamps();
